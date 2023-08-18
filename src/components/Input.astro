@@ -1,0 +1,12 @@
+---
+interface Props {
+    label: string,
+}
+
+const {label} = Astro.props
+---
+
+<label class="flex flex-col gap-2">
+    <span>{label}</span>
+    <input class="border border-black rounded-[4px] px-2 py-1 outline-none"/>
+</label>

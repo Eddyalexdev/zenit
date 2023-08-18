@@ -1,0 +1,90 @@
+---
+import Layout from '../components/Layout.astro'
+import Input from '../components/Input.astro'
+import Hero from '../components/Hero'
+import Projects from '../components/Projects'
+---
+
+<Layout title="| inicio" description="Zenit ascensores brinda el servicio de escaleras y ascensores a la medida">
+	<Hero client:load />
+	<Projects client:load />
+	<section class="py-10">
+		<div class="w-[60%] mx-auto">
+			<h2 class="text-4xl text-center mb-4">Zenit ha plasmado en sus productos <strong class="p-2 bg-blue text-white">tecnologia</strong> de vanguardia</h2>
+			<p class="text-xl text-center">Desde el detalle de cada uno de nuestros diseños hasta la calidad de su fabricación, se han incorporado en nuestros elevadores principios que garantizan que el producto final brinde un servicio confiable en el tiempo.</p>
+		</div>
+	</section>
+	<hr />
+	<section class="py-10">
+		<div class="w-[60%] mx-auto">
+			<div class="grid grid-cols-12 gap-4">
+				<div class="col-span-9">
+					<div class="grid gap-4">
+						<h2 class="text-4xl mb-4">¿Quiénes <strong>Somos</strong>?</h2>
+						<h3 class="text-4xl mb-4"><strong>Zenit</strong></h2>
+						<p class="text-xl">
+							En <strong>Zenit</strong>, de la mano de Austand, empresa líder en tecnología de elevadores, hemos logrado construir una marca propia caracterizada por la calidad, tecnología y seguridad en nuestros productos. Los ascensores que diseñamos, son la combinación del gusto de nuestros clientes y la garantía de tener el respaldo de Austand, empresa con mas de 36 años en el mundo del transporte vertical.
+						</p>
+					</div>
+					<hr class="py-5" />
+					<div class="grid gap-5">
+						<h4 class="text-blue text-xl">¿Qué ofrecemos?</h4>
+						<p>Austand es una pionera en lo referido a ascensores sin sala de máquinas (MRL). Nuestras exitosas negociaciones con esta empresa, dieron como resultado Zenit, una de las pocas empresas en el mundo, con la patente para este tipo de ascensores.</p>
+						<p>A la hora de realizar nuestros diseños, instalamos una máquina de tracción sin engranajes, con tecnología de imanes permanentes que no requieren ningún tipo de mantenimiento ni lubricación, lo cual evita la contaminación por hidrocarburos y logra un sistema bajo en ruidos. Esta tecnología amigable con el medio ambiente cumple, además, los mas altos estándares internacionales de calidad.</p>
+						<h4 class="text-blue text-xl">Normativa</h4>
+						<p>Los países con la normativa más estricta en materia de ascensores son Australia, Nueva Zelanda y el Reino Unido. Pensando en nuestros clientes, y en lograr su confianza, en Zenit nos propusimos el reto de llegar a la altura de estos estándares.</p>
+						<p>Con éxito, llegamos a nuestro objetivo cumpliendo con las normativas AS/NZS173518 de Australia y Nueva Zelanda, EN81 (de ascensores eléctricos) y EN81-70 (accesibilidad para gente de capacidades diferentes o limitadas) de la normativa europea y GB75582003 (seguridad en fabricación e instalación de ascensores) de la normativa asiática.</p>
+						<h4 class="text-blue text-xl">Beneficios</h4>
+						<p>Porque estamos comprometidos con nuestros clientes, queremos darles más de lo que esperan de un ascensor. Por eso, fabricamos nuestras cabinas con un 40% más de ventilación sobre la normativa estipulada y equipamos nuestros elevadores con la más alta tecnología.</p>
+						<p>Nuestro sistema de control con alto rendimiento industrial cuenta con un micro-ordenador con protección anti estática (ESD/EMI) y protección del sistema de control con variador de voltaje variador de frecuencia (V V V F) de corriente alterna (AC).</p>
+						<p>En Zenit trabajamos día a día en nuestro I+D para favorecer a todos nuestros clientes. Por esta misma razón, rescatamos de la cooperación entre Austand Home Lifts Company y CE Lifts Pty. Ltd. Australia, un ascensor con cualidades envidiables que se destaca fácilmente de otros proveedores.</p>
+						<p>Desde el detalle de cada uno de nuestros diseños hasta la calidad de su fabricación, se ha incorporado a nuestros elevadores varios principios para asegurar que el producto final brinde un servicio confiable prolongado en el tiempo.</p>
+					</div>
+				</div>
+				<aside class="col-span-3">
+					<h3 class="text-blue text-xl">Catalogos</h3>
+					<h3 class="text-blue text-xl">Seguridad</h3>
+					<p>Como miembros del grupo Australia United Solomon Corporation Ltd., que cuenta con 36 años de experiencia en el mundo de los ascensores, podemos decir confiadamente que Zenit ofrece</p>
+					<h4 class="text-blue text-xl text-center">"seguridad para toda la vida"</h4>
+				</aside>
+			</div>
+		</div>
+	</section>
+	<section class="bg-blue h-[400px]">
+		<div class="w-[60%] mx-auto h-full">
+			<div class="flex items-center justify-center flex-col gap-4 h-full">
+				<h2 class="text-white text-6xl text-center font-bold">Pioneros en ascensores sin sala de maquinas</h2>
+				<p class="text-white text-xl">Presentes en más de 20 países, incluyendo Australia, Nueva Zelanda, el Sudeste Asiático, Oriente Medio y Sudamérica.</p>
+			</div>
+		</div>
+	</section>
+	<section class="">
+		<div class="w-[60%] mx-auto">
+			<div class="grid grid-cols-2 gap-8">
+				<div>
+					<h3 class="text-4xl font-bold mb-4">Contáctanos</h3>
+					<form class="grid grid-cols-2 gap-4">
+						<Input label="Nombre" />
+						<Input label="Nombre" />
+						<Input label="Nombre" />
+						<Input label="Nombre" />
+						<label class="col-span-2 grid gap-2">
+							Mensaje
+							<textarea class="border border-black rounded-[4px] outline-none resize-none h-[150px]"/>
+						</label>
+					</form>
+				</div>
+				<div>
+					<h3 class="text-blue text-xl mb-2"><strong>Comunicate</strong> con nosotros</h3>
+					<p>Estamos atentos a cualquier inquietud, no dudes en comunicarte con nosotros. Responderemos a la brevedad.</p>
+					<hr class="my-5"/>
+					<h3 class="text-blue text-xl">Nuestra <strong>Oficina</strong></h3>
+					<hr class="my-5"/>
+					<h3 class="text-blue text-xl mb-2"><strong>Horario</strong> de atencion</h3>
+					<p>Lunes - Viernes 08:30 a 18:30</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
+
