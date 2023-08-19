@@ -18,7 +18,7 @@ const {description, title} = Astro.props
 	</head>
 	<body>
         <header class="fixed z-10 w-full bg-white shadow py-5">
-            <div class="w-[60%] mx-auto flex items-end justify-between">
+            <div class="w-[80%] mx-auto flex items-end justify-between">
                 <img class="max-w-[150px]" src={logo} alt="logo" />
                 <nav class="h-full flex items-center gap-6">
                     <a href="#inicio" class="uppercase text-sm hover:bg-blue hover:text-white h-full">Inicio</a>
@@ -34,5 +34,17 @@ const {description, title} = Astro.props
         <main class="pt-[100px]">
             <slot />
         </main>
+        <footer class="bg-black py-10">
+            <div class="w-[80%] mx-auto">
+                <div class="grid grid-cols-12 gap-10">
+                    <div class="col-span-9">
+                        <h2 class="text-white text-2xl mb-5">Eleva tus proyectos...</h2>
+                        <p class="text-gray text-sm">En Zenit estamos comprometidos con la satisfacción de nuestros clientes, por eso ofrecemos soluciones en ascensores y escaleras eléctricas que emplean tecnología de punta y garantizan seguridad sin sacrificar diseño, contáctenos y compruébelo...</p>
+                        <hr class="my-5" />
+                        <span class="text-gray text-xs">Zenit © Copyright 2018. Todos los derechos reservados.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
 	</body>
 </html>
